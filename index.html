@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+<link rel="stylesheet" href="assets/css/reset.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    
+</head>
+<body>
+    <h1> Fight Game </h1>
+
+    <div class="container"> 
+    <div class="jumbotron"> 
+        <div class="row">
+        <div class="col-xs-12">
+    <h2>Intructions</h2>
+    <h4>Below are four crayons.  Click on a crayon to add a specific amount of points to your total score.  The game will hide this amount until you have gathered the exact amount of crayons the computer has.  You must decided which crayons to collect to match the goal number.  Once you match, you win and the game will restart.  If you go over, the game will shutdown and restart.</h4>
+
+
+   </h1>
+    <p><button type id="start_btn">Start Here!</button></p>
+<!-- Add game play instructions here -->
+<!-- Pick user Fighter -->
+    <div class="row startArea">
+    <div class="col-sm-3">
+        <p>Red Crayon</p><img id="Pic_Red" src="crayon_red.jpeg" class= "img-rounded" alt="Red Player" width="85" height="85">
+    </div>
+    <div class="col-sm-3">
+            <p>Purple Crayon</p><img id="Pic_Purple" src="crayon_purple.jpg" class= "img-rounded" alt="Purple Player" width="85" height="85">
+    </div>
+    <div class="col-sm-3">
+            <p>Pink Crayon</p><img id="Pic_Pink" src="crayon_pink_1.jpg" class= "img-rounded" alt="Pink Player" width="85" height="85">
+    </div>
+    <div class="col-sm-3">
+            <p>Blue Crayon</p><img id="Pic_Blue" src="crayon_blue.jpg" class= "img-rounded" alt="Blue Player" width="85" height="85">
+    </div>
+    </div>
+      
+    <!-- Pick the enemy -->
+    <div class="row playArea">
+        <div class="col-sm-3">
+        <h2>Goal Number to Match: <span id ="goal_set"></h2>
+            </div>
+        <div class="col-sm-3">
+        <h2>Your Total Score: <span id="user_total"></span></h2>
+            </div>
+        <div class="col-sm-3">
+            <h2>Wins: <span id ="wins"></h2>
+            </div>
+        <div class="col-sm-3">
+        <h2>Your losses: <span id="score"></span></h2>
+            </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
